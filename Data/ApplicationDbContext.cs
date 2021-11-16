@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using WebApplication1.Models;
 
 namespace WebApplication1.Data
 {
@@ -12,5 +13,6 @@ namespace WebApplication1.Data
             : base(options)
         {
         }
+        public DbSet<WebApplication1.Models.Joke> Joke { get; set; }
     }
 }
