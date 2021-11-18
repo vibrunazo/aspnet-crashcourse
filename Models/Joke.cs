@@ -10,6 +10,8 @@ namespace WebApplication1.Models
         public int Id { get; set; }
         public string JokeQuestion { get; set; }
         public string JokeAnswer { get; set; }
+        public string Categoria { get; set; }
+        public string Email { get; set; }
 
         public Joke()
         {
