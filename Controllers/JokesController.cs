@@ -33,9 +33,9 @@ namespace WebApplication1.Controllers
         }
 
         // POST: Jokes/ShowSearchResults
-        public async Task<IActionResult> ShowSearchResults(String SearchPhrase)
+        public async Task<IActionResult> ShowSearchResults(String SearchPhrase, String SearchCategoria)
         {
-            return View("Index", await _context.Joke.Where( j => j.JokeQuestion.Contains(SearchPhrase) ).ToListAsync());
+            return View("Index", await _context.Joke.Where( j => j.JokeQuestion.Contains(SearchPhrase) && j.Categoria.Contains(SearchCategoria)).ToListAsync());
         }
 
         // GET: Jokes/Details/5
