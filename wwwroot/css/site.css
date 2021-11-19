@@ -72,6 +72,8 @@ body {
 }
 
 .searchbox {
+    width: 400px;
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
